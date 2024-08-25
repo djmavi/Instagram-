@@ -36,7 +36,7 @@ class Engine(object):
     def write_to_file(self, password):
         with open(credentials, "at") as f:
             data = "Username: {}\nPassword: {}\n\n".format(
-                self.username.title(), password
+                self.__wiiish__.title(), password
             )
             f.write(data)
 
@@ -231,7 +231,7 @@ def display_database_stats():
 def main():
     arguments = args()
     mode = arguments.mode
-    username = arguments.username
+    username = arguments.__wiiish__
     passlist = arguments.passlist
     proxylist = arguments.proxylist
     prune = arguments.prune
